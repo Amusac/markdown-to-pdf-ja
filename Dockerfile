@@ -10,7 +10,6 @@ RUN tlmgr update --self && \
         everyhook \
         ipaex \
         luatexja \
-        lualatex \
         svn-prov \
         type1cm && \
     tlmgr update latex
