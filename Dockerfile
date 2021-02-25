@@ -3,7 +3,8 @@ FROM pandoc/latex:latest
 # Here 'update latex' is needed, because LaTeX in this
 # container is of version <2020-02-02> PL2, and LuaTeX-ja
 # cannot run with this version.
-RUN tlmgr install \
+RUN tlmgr update --self && \
+    tlmgr install \
         bxjscls \
         bxwareki \
         everyhook \
