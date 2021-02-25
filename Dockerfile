@@ -4,7 +4,7 @@ FROM pandoc/ubuntu-latex:latest
 # container is of version <2020-02-02> PL2, and LuaTeX-ja
 # cannot run with this version.
 RUN apt-get update && \
-    apt-get install git
+    apt-get install -y git
 RUN tlmgr update --self --all && \
     tlmgr install \
         bxjscls \
