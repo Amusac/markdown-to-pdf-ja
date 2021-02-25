@@ -2,8 +2,8 @@
 
 set -eux
 
-echo `kpsewhich --var-value=TEXMFLOCAL`
-
+# echo `kpsewhich --var-value=TEXMFLOCAL`
+# /opt/texlive/texmf-local
 
 # echo `kpsewhich --var-value=TEXMFHOME`
 # /github/home/texmf
