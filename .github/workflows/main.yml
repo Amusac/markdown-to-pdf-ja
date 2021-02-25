@@ -6,7 +6,7 @@ jobs:
     name: a job to pandoc
     steps:
       - name: pandoc action step
-        uses: Amusac/markdown-to-pdf-ja@0.1
+        uses: Amusac/markdown-to-pdf-ja@v0.1
         id: pandoc
         with:
           input-file: "input.md"
