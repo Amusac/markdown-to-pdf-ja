@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  pandoc-job:
+    runs-on: ubuntu-latest
+    name: a job to pandoc
+    steps:
+      # このリポジトリのプライベートアクションを使用するには
+      # リポジトリをチェックアウトする
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: pandoc action step
+        uses: ./ # Uses an action in the root directory
+        id: pandoc
+        with:
+          input-file: "input.md"
