@@ -5,8 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: a job to pandoc
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: pandoc action step
-        uses: Amusac/markdown-to-pdf-ja@v0.1
+        uses: Amusac/markdown-to-pdf-ja@main
         id: pandoc
         with:
           input-file: "input.md"

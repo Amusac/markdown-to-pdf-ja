@@ -15,7 +15,7 @@ RUN tlmgr update --self && \
     tlmgr update latex
 
 
-# アクションのリポジトリからコードファイルをコンテナのファイルシステムパス `/`にコピー
+
 COPY entrypoint.sh /entrypoint.sh
 
 RUN ["chmod", "+x", "/entrypoint.sh"]
