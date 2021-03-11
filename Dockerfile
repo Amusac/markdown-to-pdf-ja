@@ -3,8 +3,8 @@ FROM pandoc/latex:latest
 # Here 'update latex' is needed, because LaTeX in this
 # container is of version <2020-02-02> PL2, and LuaTeX-ja
 # cannot run with this version.
-RUN apt-get update && \
-    apt-get install -y git
+RUN apk update && \
+    apt add git
 RUN tlmgr update --self --all && \
     tlmgr install \
         bxjscls \
