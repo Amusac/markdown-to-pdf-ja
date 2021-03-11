@@ -15,6 +15,6 @@ set -eux
 # mktexlsr
 
 pandoc $1 -o main.pdf --pdf-engine=lualatex \
-  -V documentclass=jsreport \
+  -V documentclass=ltjsreport \
   -V classoption=pandoc
 #   -V classoption=jafont=ipaex
