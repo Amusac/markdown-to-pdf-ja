@@ -12,9 +12,11 @@ jobs:
         with:
           input-file: "input.md"
       - name: push pdf to repository
-        run: git config --global user.name 'markdown-to-pdf-ja'
+        run: |
+          git config --global user.name 'markdown-to-pdf-ja'
           git config --global user.email 'Amusac@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git checkout $GITHUB_HEAD_REF
+          # git checkout $GITHUB_HEAD_REF
+          git checkout dev
           git commit -am "push PDF"
           git push
