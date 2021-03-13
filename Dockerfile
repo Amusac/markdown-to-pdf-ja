@@ -1,4 +1,4 @@
-FROM pandoc/latex:latest
+FROM pandoc/latex:2.11.4
 
 # Here 'update latex' is needed, because LaTeX in this
 # container is of version <2020-02-02> PL2, and LuaTeX-ja
@@ -7,14 +7,14 @@ RUN apk update && \
     apk add git
 RUN tlmgr update --self --all && \
     tlmgr install \
-        bxjscls \
-        bxwareki \
-        everyhook \
-        ipaex \
-        luatexja \
-        svn-prov \
-        type1cm && \
-    tlmgr update latex
+    bxjscls \
+    bxwareki \
+    everyhook \
+    ipaex \
+    luatexja \
+    svn-prov \
+    type1cm
+
 
 
 
