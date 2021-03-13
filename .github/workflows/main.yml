@@ -11,3 +11,5 @@ jobs:
         uses: Amusac/markdown-to-pdf-ja@dev
         with:
           input-file: "input.md"
+      - name: ls
+        run: ls .
