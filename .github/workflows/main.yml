@@ -18,5 +18,6 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           # git checkout $GITHUB_HEAD_REF
           git checkout dev
+          git add main.PDF
           git commit -am "push PDF"
           git push
