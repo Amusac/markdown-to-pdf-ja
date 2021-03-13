@@ -1,11 +1,9 @@
 FROM pandoc/ubuntu-latex:2.11.4
 
-RUN tlmgr update --self --all && \
-    tlmgr install \
+RUN tlmgr install \
     bxjscls \
     bxwareki \
     everyhook \
-    ipaex \
     luatexja \
     svn-prov \
     type1cm \ 
