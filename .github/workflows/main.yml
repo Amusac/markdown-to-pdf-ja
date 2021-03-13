@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: pandoc action step
-        uses: Amusac/markdown-to-pdf-ja@dev
+        uses: Amusac/markdown-to-pdf-ja@main
         with:
           input-file: "input.md"
       - name: push pdf to github repository
