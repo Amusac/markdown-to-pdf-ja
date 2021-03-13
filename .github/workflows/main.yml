@@ -16,5 +16,5 @@ jobs:
           git config --global user.email 'Amusac@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout $GITHUB_HEAD_REF
-          git commit -am "Action: push PDF"
+          git commit -am "push PDF"
           git push
