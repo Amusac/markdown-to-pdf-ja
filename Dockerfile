@@ -14,7 +14,9 @@ RUN tlmgr update --self --all && \
     luatexja \
     svn-prov \
     type1cm \ 
-    collection-langjapanese
+    collection-langjapanese \
+    collection-fontsrecommended \
+    collection-luatex
 
 
 COPY entrypoint.sh /entrypoint.sh
