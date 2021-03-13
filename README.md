@@ -26,3 +26,4 @@ markdown をプッシュすると自動で PDF にコンパイルし、PDF を G
 - [LaTeX と Travis CI でヒラギノフォント埋め込み PDF を作る - Qiita](https://qiita.com/yyu/items/e3451caa86779b94abe1)
 - [Pandoc で参考文献リストを処理する扱う方法 (Pandoc と Zotero で参考文献：後編)](https://zenn.dev/sky_y/articles/pandoc-advent-2020-bib2)
 - [GitHub actions で pandoc を使って pdf をコンパイル、そのまま push する | mat2's tech blog](https://mat2.net/posts/2020/01/09/github-actions-with-pandoc.html)
+- [GitHub Actions で TeX をコンパイルして PDF を Releases にアップロードする](https://zenn.dev/ganariya/articles/platex-github-action)
