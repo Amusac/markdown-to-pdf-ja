@@ -14,8 +14,6 @@ set -eux
 
 # mktexlsr
 
-export PATH="$PATH:/opt/texlive/texdir/bin/x86_64-linuxmusl"
-
 echo $PATH
 
 pandoc $1 -o main.pdf --pdf-engine=lualatex \
