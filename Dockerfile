@@ -16,8 +16,6 @@ RUN tlmgr update --self --all && \
     type1cm
 
 
-ENV PATH="/opt/texlive/texdir/bin/x86_64-linuxmusl:${PATH}"
-
 COPY entrypoint.sh /entrypoint.sh
 
 RUN ["chmod", "+x", "/entrypoint.sh"]
