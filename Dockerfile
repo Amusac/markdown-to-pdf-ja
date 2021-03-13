@@ -13,7 +13,8 @@ RUN tlmgr update --self --all && \
     ipaex \
     luatexja \
     svn-prov \
-    type1cm
+    type1cm \ 
+    collection-langjapanese
 
 
 COPY entrypoint.sh /entrypoint.sh
