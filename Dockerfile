@@ -1,6 +1,7 @@
 FROM pandoc/ubuntu-latex:2.11.4
 
-RUN tlmgr install \
+RUN tlmgr update --self && \
+    tlmgr install \
     bxjscls \
     bxwareki \
     everyhook \
