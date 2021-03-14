@@ -10,7 +10,7 @@ jobs:
       - name: pandoc action step
         uses: Amusac/markdown-to-pdf-ja@main
         with:
-          input-file: "input.md"
+          DEFAULT_FILE: "report"
       - name: push pdf to github repository
         run: |
           git config --global user.name 'markdown-to-pdf-ja'
