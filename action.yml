@@ -1,10 +1,10 @@
 name: "markdown-to-pdf-ja"
 description: "make pdf from md by pandoc"
 inputs:
-  input-file: # id of input
-    description: "input markdown file"
+  DEFAULT_FILE: # id of input
+    description: "default file of pandoc"
     required: true
-    default: "input.md"
+    default: "report"
 runs:
   using: "docker"
   image: "Dockerfile"
