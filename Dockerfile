@@ -12,6 +12,7 @@ RUN tlmgr update --self && \
     collection-fontsrecommended \
     collection-luatex
 
+COPY entrypoint.sh /entrypoint.sh
 COPY report.yaml /report.yaml
 COPY sist02.csl /sist02.csl
 COPY refs.bib /refs.bib
