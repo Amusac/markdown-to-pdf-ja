@@ -16,9 +16,10 @@ markdown をプッシュすると自動で PDF にコンパイルし、PDF を G
 1. `input.md`をそのリポジトリにプッシュ
 1. pdf が自動でプッシュされます！
 
-さらにカスタマイズしたい人は、Pandoc の Defaulf file 機能が使えます。
+さらにカスタマイズしたい人は、Pandoc の Default file 機能が使えます。
 [report.yaml](report.yaml)を編集して自分のリポジトリに置いてください。
-（ファイル名が異なる場合は、main.yml 内の`DEFAULT_FILE`を編集してください。ただし`yml`ではなく`yaml`としてください。）
+（ファイル名が異なる場合は、main.yml 内の`DEFAULT_FILE`を編集してください。ただし Default file は`yml`ではなく`yaml`としてください。）
+ CSL ファイルや bib ファイル、 TeX のプリアンブルファイル、複数のインプットファイルなども、自分のリポジトリに置き、 Default file を編集することで使えます。
 
 ## 最後に
 
