@@ -6,14 +6,19 @@ markdown を Pandoc を使ってコンパイルする Github Action です。日
 
 markdown をプッシュすると自動で PDF にコンパイルし、PDF を Github Repository に Push します。
 
-大学生のちょっとしたレポート作成や、ちょっとした文書作成などに使えます。
+大学生のレポート作成や、文書作成などに使えます。
 
 「Word はバージョン管理できないから markdown で書きたいけど、日本語 markdown を PDF にする方法がわからん/めんどくさい」という方におすすめです。
 
 ## 使い方
 
 1. `./github/workflows/main.yml`を自分のリポジトリにコピー
-1. `input.md`をプッシュ
+1. `input.md`をそのリポジトリにプッシュ
+1. pdf が自動でプッシュされます！
+
+さらにカスタマイズしたい人は、Pandoc の Defaulf file 機能が使えます。
+[report.yaml](report.yaml)を編集して自分のリポジトリに置いてください。
+（ファイル名が異なる場合は、main.yml 内の`DEFAULT_FILE`を編集してください。ただし`yml`ではなく`yaml`としてください。）
 
 ## 最後に
 
