@@ -1,8 +1,6 @@
 ---
 title: MarkdownからPDFを作る
-author:
-  - name: Endo Kazuma
-    affiliation: 東京大学
+author: Endo Kazuma
 ---
 
 # はじめに
