@@ -1,5 +1,6 @@
 output-file: main.pdf
-input-file: input.md
+input-files:
+  - input.md
 
 variables:
   documentclass: ltjsreport
