@@ -17,4 +17,5 @@ COPY report.yaml /report.yaml
 COPY sist02.csl /sist02.csl
 COPY refs.bib /refs.bib
 
+RUN ["chmod", "+x", "/entrypoint.sh"]
 ENTRYPOINT ["entrypoint.sh"]
