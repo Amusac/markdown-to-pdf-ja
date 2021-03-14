@@ -1,0 +1,15 @@
+output-file: main.pdf
+input-file: input.md
+
+variables:
+  documentclass: ltjsreport
+  classoption:
+    - pandoc
+
+citeproc: true
+csl: sist02
+bibliography:
+  - refs.bib
+cite-method: citeproc
+
+pdf-engine: lualatex
