@@ -10,11 +10,16 @@ markdown をプッシュすると自動で PDF にコンパイルし、PDF を G
 
 「Word はバージョン管理できないから markdown で書きたいけど、日本語 markdown を PDF にする方法がわからん/めんどくさい」という方におすすめです。
 
+簡単に使い始めることができ、なおかつ上級者にとってはカスタマイズ性に優れたActionを目指しています。
+
 ## 使い方
 
 1. `./github/workflows/main.yml`を自分のリポジトリにコピー
 1. `input.md`をそのリポジトリにプッシュ
 1. pdf が自動でプッシュされます！
+
+
+最小構成の使用例→https://github.com/Amusac/markdown-to-pdf-ja-sample
 
 さらにカスタマイズしたい人は、Pandoc の Default file 機能が使えます。
 [report.yaml](report.yaml)を編集して自分のリポジトリに置いてください。
